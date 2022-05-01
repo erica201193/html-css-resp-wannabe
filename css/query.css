@@ -1,8 +1,68 @@
+/************************************************
+    SOLUZIONE RESPONSIVE
+ ************************************************/
+
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+}
+
 @media screen and (max-width: 768px){
 	.container {
-		width: 758px;
+		width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
 	}
+}
+
+@media screen and (max-width: 480px){
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .card {
+        margin-bottom: 4rem;
+    }
+
+    .lessons .col {
+        width: 100%;
+    }
+
+    .lessons .col img {
+        height: 230px;
+    }
+
+    .steps .col {
+        width: 100%;
+    }
+
+    .steps .col img {
+        height: 230px;
+    }
+
+    .steps {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    .why-us .col-right {
+        width: 100%;
+        padding-top: 4rem;
+    }
+
+    .why-us .col-left {
+        width: 100%;
+    }
+
 }
